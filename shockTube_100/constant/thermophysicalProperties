@@ -20,7 +20,7 @@ thermoType
     mixture         pureMixture;
     transport       const;
     thermo          hConst;
-    equationOfState perfectGas;
+    equationOfState perfectGas; // Ideal gas Law
     specie          specie;
     energy          sensibleInternalEnergy;
 }

@@ -10,27 +10,15 @@ FoamFile
     version     2.0;
     format      ascii;
     arch        "LSB;label=32;scalar=64";
-    class       volVectorField;
-    location    "0";
-    object      U;
+    class       uniformDimensionedScalarField;
+    location    "0.003/uniform";
+    object      cumulativeContErr;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+dimensions      [0 0 0 0 0 0 0];
+value           -6.48067e-16;
 
-internalField   uniform (0 0 0);
-
-boundaryField
-{
-    sides
-    {
-        type            zeroGradient;
-    }
-    empty
-    {
-        type            empty;
-    }
-}
 
 
 // ************************************************************************* //
